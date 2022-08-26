@@ -12,15 +12,16 @@ class CustomTextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => TextField(
-      controller: controller,
-      decoration: InputDecoration(
-        hintText: hintText,
-        focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.red),
+        controller: controller,
+        decoration: InputDecoration(
+          hintText: hintText,
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.red),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderSide: const BorderSide(color: Colors.red),
+            borderRadius: BorderRadius.circular(15),
+          ),
         ),
-        enabledBorder: OutlineInputBorder(
-          borderSide: const BorderSide(color: Colors.red),
-          borderRadius: BorderRadius.circular(15),
-        ),
-      ));
+      );
 }
